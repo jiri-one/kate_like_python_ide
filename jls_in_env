@@ -1,0 +1,8 @@
+#!/bin/bash
+cd $1
+# run the server (python-lsp-server) within the virtualenv
+# (i.e. with virtualenv variables setup)
+# so source the virtualenv
+source venv/bin/activate
+# server mileage or arguments may vary
+exec jedi-language-server
