@@ -1,11 +1,14 @@
 # kate_like_python_ide
 
 folders:
+
 ~/.config/kate/lspclient/
 ~/.bin/
 
 files:
 ~.bash_profile
+~/.config/pycodestyle
+
 ```
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
