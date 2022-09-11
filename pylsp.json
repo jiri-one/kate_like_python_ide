@@ -1,1 +1,26 @@
-/home/jiri/.config/kate/lspclient/pylsp.json
+{
+  "servers": {
+    "python": {
+      "command": [
+        "pylsp_in_env",
+        "%{Project:NativePath}"
+      ],
+      "root": ".",
+      "settings": {
+        "pylsp": {
+          "plugins": {
+            "pylsp_mypy": {
+              "enabled": true,
+              "live_mode": true,
+              "overrides": [
+                "--python-executable",
+                "%{Project:NativePath}/venv/bin/python",
+                true
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
